@@ -29,9 +29,10 @@ public class DrawFigure {
             for (int j = 1; j <= numExclaim - 1; j++) {
                 System.out.print("!");
             }
-            for (int k = i; k <= 10; k++) {
-                System.out.println("\\\\");
- 
+            System.out.println();
+            for (int k = 1; k <= finalNumSlash; k++) {
+                System.out.print("\\\\");
+                System.out.print("//");
             }
         }
     }
