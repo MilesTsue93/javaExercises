@@ -1,0 +1,21 @@
+public class DrawFigure {
+  /*
+
+  *** pseudocode ***
+  1. draw exclamation marks in decreasing amount until bottom
+  2. in place of exclamation marks, draw preceding back slashes and proceeding forward slashes  
+  
+  *** pseudocode revised ***
+  1. for (every line)
+        print exclamation marks (!)
+        go to next line of output
+        
+
+  */
+
+   public static void main(String[} args) {
+
+   }
+
+
+}
