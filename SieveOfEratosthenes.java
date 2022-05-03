@@ -46,5 +46,7 @@ public class SieveOfEratosthenes {
     }
 
 
-// This code has been contributed by Amit Khandelwal.
-// on GeeksForGeeks.com
+/**
+ * This code has been contributed by Amit Khandelwal.
+ * on GeeksForGeeks.com 
+ */
