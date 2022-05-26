@@ -33,7 +33,7 @@ public class colors {
             color += "ed";
             return color;
         } else {
-            System.out.print("Unknown color: " + color);
+            System.out.println("Unknown color: " + color);
             return color;
         } 
 
