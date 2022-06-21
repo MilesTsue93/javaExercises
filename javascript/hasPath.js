@@ -1,4 +1,4 @@
-// graph traversal
+// graph traversal, from Alvin Azablan's tutorial on Struct.ty
 
 const graph = {
     a: ['b', 'c'],
