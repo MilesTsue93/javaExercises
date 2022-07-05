@@ -1,7 +1,7 @@
 package chapter_5;
 
 public class BooleanZen {
-    public static void main (String args[]) {
+    public static void main (String[] args) {
         boolean result1 = startEndSame("Siamese");
         System.out.println(result1);
         boolean result2 = startEndSame("racer");

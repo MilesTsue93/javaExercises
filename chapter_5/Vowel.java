@@ -1,7 +1,7 @@
 package chapter_5;
 
 public class Vowel {
-    public static void main (String args[]) {
+    public static void main (String[] args) {
         
         boolean vowel1 = isVowel('k');
         boolean vowel2 = isVowel('t');
