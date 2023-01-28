@@ -3,6 +3,9 @@ import java.util.Scanner;
 import java.util.Random;
 
 public class doWhile {
+    /**
+     * @param args
+     */
     public static void main(String[] args) {
         Scanner console = new Scanner(System.in);
         // prompt for message
@@ -22,5 +25,7 @@ public class doWhile {
             number = rand.nextInt(1001);
             System.out.println("Random Number: " + number);
         } while (number < 900);
+
+        console.close();
     }
 }
