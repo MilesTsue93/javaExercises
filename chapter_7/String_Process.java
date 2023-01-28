@@ -23,6 +23,5 @@ public class String_Process {
 
         avg = avg / counts.length;
         return avg;
-    }
-    
+    }    
 }
