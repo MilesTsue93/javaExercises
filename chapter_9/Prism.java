@@ -1,5 +1,8 @@
 package chapter_9;
 
+
+// this class works for cubes too, so
+// no need to make extra cube class
 public class Prism implements Shape {
   
   private double width;
@@ -12,11 +15,11 @@ public class Prism implements Shape {
     this.height = height;
   }
 
-  public double getwidth() {
+  public double getWidth() {
     return width;
   }
 
-  public void setwidth(double width) {
+  public void setWidth(double width) {
     this.width = width;
   }
 
@@ -38,11 +41,11 @@ public class Prism implements Shape {
 
   // returns surface area of a rectagular prism
   public double getSurfaceArea() {
-    return 2 * ((width * height) + (width * length) + (length * height));
+    return 2 * ((getWidth() * getHeight()) + (getWidth() * getHeight()) + (getWidth() * getHeight()));
   }
 
   // returns volume of a prism
   public double getVolume() {
-    return width * height * height;
+    return getWidth() * getHeight() * getHeight();
   }
 }
