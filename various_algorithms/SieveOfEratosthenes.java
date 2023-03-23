@@ -1,3 +1,4 @@
+package various_algorithms;
 public class SieveOfEratosthenes {
 
     public void sieve(int n) {

@@ -3,13 +3,15 @@ public class Date {
   private int month;
   private int week;
   private int day;
-  private int date;
+  private String date;
+
+  // pre: years are expected to adhere to constraints of calendar
 
   public Date(int year, int month, int day) {
     this.year = year;
     this.month = month;
     this.day = day;
-    this.date = year * 365 + month * 30 + week * 7 + day; 
+    this.date = year + "/" + month + "/" + day;
   }
 
   public void addDays(int days) {

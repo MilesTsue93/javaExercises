@@ -1,3 +1,4 @@
+package various_algorithms;
 public class factorial {
     public static int factorialMethod(int n) {
         if (n < 0) {  //throw exception if this is true
