@@ -29,13 +29,13 @@ public class cumulative {
         String choice = console.next();
 
         // until user writes 'false' in console
-        while (choice.equals("y")) {
+        while ("y".equals(choice)) {
 
             // user chooses a factor
             System.out.print("Give me a number to multiply your last number by: ");
             int factor = console.nextInt();
             
-            if(choice.equals("n")) {
+            if("n".equals(choice)) {
                 return product;
             }
             product *= factor;  
@@ -44,7 +44,7 @@ public class cumulative {
             System.out.print("Do you want to continue accumulating? [true/false]");
             choice = console.next();
 
-            if (!(choice.equals("y") && choice.equals("n"))) {
+            if (!("y".equals(choice) && "n".equals(choice))) {
                 throw new IllegalArgumentException(USAGE);
             }
         }
@@ -70,7 +70,7 @@ public class cumulative {
         String choice = console.next();
 
         //loop through this process until terminated by user
-        while(choice.equals("y")) {
+        while("y".equals(choice)) {
 
             // declare user inputs
             System.out.print("What's your number, gurl??? ");
@@ -85,10 +85,10 @@ public class cumulative {
             System.out.print("do you want to pick another??? ");
             choice = console.next();
 
-            if (choice.equals("n")) {
+            if ("n".equals(choice)) {
                 System.out.println("Have a nice day.");
             }
-            if (!choice.equals("y") && !choice.equals("n")) {
+            if (!"y".equals(choice) && !"n".equals(choice)) {
                 throw new IllegalArgumentException(USAGE);
             }
         }
