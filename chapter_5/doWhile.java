@@ -1,4 +1,5 @@
 package chapter_5;
+import java.security.SecureRandom;
 import java.util.Scanner;
 import java.util.Random;
 
@@ -19,7 +20,7 @@ public class doWhile {
         } while (answer.equals("y"));
 
         //prompt for numbers. Will keep prompting until a number is greater than 900
-        Random rand = new Random();
+        Random rand = new SecureRandom();
         int number;
         do {
             number = rand.nextInt(1001);
