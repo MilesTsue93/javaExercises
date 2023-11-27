@@ -52,6 +52,47 @@ class recursion {
         }
     }
 
+    public static void writeSequence(int n) {
+        if (n == 1) {
+            System.out.print("1 ");
+        }
+        else if (n == 2) {
+            System.out.print("1 1 ");
+        } else {
+            System.out.print((n+1) / 2 + " ");
+            writeSequence(n - 2);
+            System.out.print((n+1) / 2 + " ");
+        } 
+    }
+
+    public static int perm(int n, int r) {
+        if (n == 1 || r == 1) {
+            return n;
+        } else {
+            return n * perm(n - 1, r - 1);
+        }
+    }
+
+    public static void doubleDigits(int n) {
+        if (n % 10 == 0) {
+           return;
+        } else {   
+            doubleDigits(n/10);
+            System.out.print(n%10);
+            System.out.print(n%10);
+
+        }
+    }
+
+    public static void writeBinary(int n) {
+       if (n == 0) {
+        return;
+       } else {
+        writeBinary(n/2);
+        System.out.print(n%2);    
+       }
+    }
+
     public static void main(String[] args) {
         /* 
         String test = "hello there!";
@@ -66,7 +107,12 @@ class recursion {
         */
 
         //writeNums(-3);
-
+        //writeSequence(10);
+        //int n = perm(6, 3);
+        //System.out.println(n);
         
+        //doubleDigits(567953);
+
+        writeBinary(44);
     } 
 }
