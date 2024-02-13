@@ -17,7 +17,7 @@ public class doWhile {
             System.out.println(message);
             System.out.print("would you like to hear it again? [y/n] ");
             answer = console.next();
-        } while (answer.equals("y"));
+        } while ("y".equals(answer));
 
         //prompt for numbers. Will keep prompting until a number is greater than 900
         Random rand = new SecureRandom();
